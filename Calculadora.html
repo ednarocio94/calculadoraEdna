@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hacemos la página responsiva en dispositivos móviles -->
+    <link rel="stylesheet" href="calculadora.css"> <!-- Enlace a la hoja de estilos CSS externa -->
+    <title>Calculadora JS</title> <!-- Título de la página -->
+</head>
+<body>
+    <!-- Contenedor principal de la calculadora -->
+    <main id="calculator">
+        <!-- Pantalla de la calculadora donde se mostrará el resultado -->
+        <input id="display" type="text" disabled> <!-- El campo de entrada está deshabilitado para que el usuario no pueda escribir directamente -->
+        <br> <!-- Salto de línea para espaciar la pantalla de los botones -->
+
+        <!-- Botones de operadores -->
+        <!-- Botón para reiniciar la calculadora y limpiar la pantalla -->
+        <button id="ac" class="operator">AC</button>
+        <!-- Botón para borrar el último dígito ingresado -->
+        <button id="de" class="operator">DE</button>
+        <!-- Botón para ingresar un punto decimal -->
+        <button id="." class="operator">.</button>
+        <!-- Botón para realizar una división -->
+        <button id="/" class="operator">/</button>
+        <br> <!-- Salto de línea para organizar los botones en filas -->
+
+        <!-- Botones de números y operaciones -->
+        <!-- Fila de botones 7, 8, 9 y multiplicación -->
+        <button id="7">7</button>
+        <button id="8">8</button>
+        <button id="9">9</button>
+        <!-- Botón para realizar una multiplicación -->
+        <button id="*" class="operator">X</button> <!-- Usamos "X" para representar la multiplicación -->
+        <br>
+
+        <!-- Fila de botones 6, 5, 4 y resta -->
+        <button id="6">6</button>
+        <button id="5">5</button>
+        <button id="4">4</button>
+        <!-- Botón para realizar una resta -->
+        <button id="-" class="operator">-</button>
+        <br>
+
+        <!-- Fila de botones 3, 2, 1 y suma -->
+        <button id="3">3</button>
+        <button id="2">2</button>
+        <button id="1">1</button>
+        <!-- Botón para realizar una suma -->
+        <button id="+" class="operator">+</button>
+        <br>
+
+        <!-- Fila de botones 00, 0 y el botón de igual -->
+        <button id="00">00</button>
+        <button id="0">0</button>
+        <!-- Botón para calcular el resultado de la operación -->
+        <button id="=" class="equal operator">=</button> <!-- Cuando se presione, se realizará el cálculo -->
+        <br>
+
+        <!-- Enlace al archivo JavaScript que manejará la lógica de la calculadora -->
+        <script src="calculadora.js"></script>
+    </main>
+</body>
+</html>
